@@ -3,4 +3,37 @@
   font-family: "Avenir";
   src: url(../assets/fonts/Avenir-400.otf);
   font-display: swap;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../assets/fonts/Avenir-500.otf);
+  font-display: swap;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../assets/fonts/Avenir-800.otf);
+  font-display: swap;
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../assets/fonts/Avenir-900.otf);
+  font-display: swap;
+  font-weight: 800;
+}
+
+//Helvetica
+@font-face {
+  font-family: "Helvetica";
+  src: url(../assets/fonts/Helvetica-400.otf);
+  font-display: swap;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url(../assets/fonts/Helvetica-700.otf);
+  font-display: swap;
+  font-weight: 700;
 }
