@@ -393,4 +393,58 @@ template {
 [hidden] {
   display: none !important;
 }
+
+body {
+  max-width: 1600px;
+  height: 4350px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f6fafd), color-stop(19.4%, #fff));
+  background: linear-gradient(180deg, #f6fafd 0%, #fff 19.4%);
+  overflow-x: hidden;
+  position: relative;
+}
+
+.section-one {
+  position: absolute;
+  width: 1248px;
+  height: 754px;
+  left: 240px;
+  top: 47px;
+  background: #dbdbdb;
+}
+
+.section-two {
+  position: absolute;
+  width: 1117px;
+  height: 560px;
+  left: 240px;
+  top: 903.18px;
+  background: #dbdbdb;
+}
+
+.section-three {
+  position: absolute;
+  width: 1137.28px;
+  height: 1026px;
+  left: 220px;
+  top: 1613px;
+  background: #dbdbdb;
+}
+
+.section-four {
+  position: absolute;
+  width: 1118px;
+  height: 709px;
+  left: 242px;
+  top: 2789px;
+  background: #dbdbdb;
+}
+
+.section-five {
+  position: absolute;
+  width: 1600px;
+  height: 613px;
+  left: 0px;
+  top: 3648px;
+  background: #dbdbdb;
+}
 /*# sourceMappingURL=style.css.map */
