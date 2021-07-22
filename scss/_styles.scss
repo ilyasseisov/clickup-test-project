@@ -32,7 +32,7 @@ body {
   padding-right: 12px;
   display: flex;
   align-items: center;
-  // justify-content: space-between;
+  margin-bottom: 130px;
   background: rgb(255, 180, 180);
   @media ($xxl) {
     width: 1120px;
@@ -87,6 +87,40 @@ body {
     height: 14px;
     vertical-align: middle;
     margin-left: 20px;
+  }
+}
+
+.hero {
+  &__title {
+    color: $text-blue;
+    font-size: 80px;
+    line-height: 110%;
+    @extend %helvetica-700;
+    margin-bottom: 50px;
+  }
+  &__paragraph {
+    color: $text-grey;
+    font-size: 18px;
+    line-height: 160%;
+    @extend %avenir-500;
+    margin-bottom: 50px;
+    @media ($xxl) {
+      width: 380px;
+    }
+  }
+  &__button {
+    color: $white;
+    background: $purple;
+    padding: 16px 37px;
+    border-radius: 50px;
+    font-size: 18px;
+    line-height: 160%;
+    @extend %avenir-800;
+  }
+  @media ($xxl) {
+    .content {
+      width: 645px;
+    }
   }
 }
 
