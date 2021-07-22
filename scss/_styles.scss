@@ -1,33 +1,56 @@
 @import "variables";
 
 body {
-  max-width: $body-width;
   height: $body-height;
   background: linear-gradient(180deg, $body-grey 0%, $white 19.4%);
   overflow-x: hidden;
   position: relative;
+  @media ($xxl) {
+    max-width: $body-width;
+    margin: 0 auto;
+  }
 }
 
 .section-one {
-  position: absolute;
-  width: 1248px;
-  height: 754px;
-  left: 240px;
-  top: 47px;
+  // position: absolute;
+  // height: 754px;
+  // left: 240px;
+  // top: 47px;
   background: rgb(219, 219, 219);
+  margin-top: 47px;
+  @media ($xxl) {
+    width: 1248px;
+    margin: 0 auto;
+    margin-top: 47px;
+  }
 }
 
 .navigation {
-  width: 1120px;
+  width: 100%;
   height: 60px;
+  padding-left: 12px;
+  padding-right: 12px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  .navigation__logo {
+  // justify-content: space-between;
+  background: rgb(255, 180, 180);
+  @media ($xxl) {
+    width: 1120px;
+    margin-right: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  &__block1 {
+    margin-right: 121px;
+  }
+  &__block3 {
+    margin-left: auto;
+  }
+  &__logo {
     width: 49px;
     height: 35px;
   }
-  .navigation__links li {
+  &__links li {
     cursor: pointer;
     display: inline-block;
     margin-right: 40px;
@@ -41,11 +64,11 @@ body {
     color: $text-blue;
   }
 
-  .navigation__links li:nth-of-type(4) {
+  &__links li:nth-of-type(4) {
     margin-right: 0px;
   }
 
-  .navigation__button {
+  &__button {
     cursor: pointer;
     border: none;
     text-decoration: none;
@@ -59,7 +82,7 @@ body {
     color: $text-blue;
     @extend %avenir-800;
   }
-  .navigation__icon {
+  &__icon {
     width: 20px;
     height: 14px;
     vertical-align: middle;
