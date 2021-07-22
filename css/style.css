@@ -181,7 +181,6 @@ a {
 
 a:hover {
   color: #0056b3;
-  text-decoration: underline;
 }
 
 a:not([href]):not([tabindex]) {
@@ -381,14 +380,19 @@ template {
   display: none !important;
 }
 
-.navigation__links li {
+.navigation__links li, .hero__paragraph {
   font-family: "Avenir", Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
 
-.navigation li.navigation__links_active, .navigation__button {
+.navigation li.navigation__links_active, .navigation__button, .hero__button {
   font-family: "Avenir", Arial, Helvetica, sans-serif;
   font-weight: 800;
+}
+
+.hero__title {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
 body {
@@ -430,6 +434,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 130px;
   background: #ffb4b4;
 }
 
@@ -492,6 +497,41 @@ body {
   height: 14px;
   vertical-align: middle;
   margin-left: 20px;
+}
+
+.hero__title {
+  color: #212353;
+  font-size: 80px;
+  line-height: 110%;
+  margin-bottom: 50px;
+}
+
+.hero__paragraph {
+  color: #4b5d68;
+  font-size: 18px;
+  line-height: 160%;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1400px) {
+  .hero__paragraph {
+    width: 380px;
+  }
+}
+
+.hero__button {
+  color: #fff;
+  background: #9c69e2;
+  padding: 16px 37px;
+  border-radius: 50px;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+@media (min-width: 1400px) {
+  .hero .content {
+    width: 645px;
+  }
 }
 
 .section-two {
