@@ -381,18 +381,17 @@ template {
   display: none !important;
 }
 
-.navigation .navigation__links li {
+.navigation__links li {
   font-family: "Avenir", Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
 
-.navigation li.navigation__links_active, .navigation .navigation__button {
+.navigation li.navigation__links_active, .navigation__button {
   font-family: "Avenir", Arial, Helvetica, sans-serif;
   font-weight: 800;
 }
 
 body {
-  max-width: 1600px;
   height: 4350px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f6fafd), color-stop(19.4%, #fff));
   background: linear-gradient(180deg, #f6fafd 0%, #fff 19.4%);
@@ -400,35 +399,63 @@ body {
   position: relative;
 }
 
+@media (min-width: 1400px) {
+  body {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
 .section-one {
-  position: absolute;
-  width: 1248px;
-  height: 754px;
-  left: 240px;
-  top: 47px;
   background: #dbdbdb;
+  margin-top: 47px;
+}
+
+@media (min-width: 1400px) {
+  .section-one {
+    width: 1248px;
+    margin: 0 auto;
+    margin-top: 47px;
+  }
 }
 
 .navigation {
-  width: 1120px;
+  width: 100%;
   height: 60px;
+  padding-left: 12px;
+  padding-right: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  background: #ffb4b4;
 }
 
-.navigation .navigation__logo {
+@media (min-width: 1400px) {
+  .navigation {
+    width: 1120px;
+    margin-right: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.navigation__block1 {
+  margin-right: 121px;
+}
+
+.navigation__block3 {
+  margin-left: auto;
+}
+
+.navigation__logo {
   width: 49px;
   height: 35px;
 }
 
-.navigation .navigation__links li {
+.navigation__links li {
   cursor: pointer;
   display: inline-block;
   margin-right: 40px;
@@ -441,11 +468,11 @@ body {
   color: #212353;
 }
 
-.navigation .navigation__links li:nth-of-type(4) {
+.navigation__links li:nth-of-type(4) {
   margin-right: 0px;
 }
 
-.navigation .navigation__button {
+.navigation__button {
   cursor: pointer;
   border: none;
   text-decoration: none;
@@ -460,7 +487,7 @@ body {
   color: #212353;
 }
 
-.navigation .navigation__icon {
+.navigation__icon {
   width: 20px;
   height: 14px;
   vertical-align: middle;
