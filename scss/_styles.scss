@@ -178,8 +178,10 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 50px;
+  margin-bottom: 150px;
   @media ($xl) {
     margin: 0;
+    margin-bottom: 150px;
     max-width: 1117px;
     height: 560px;
     flex-direction: row;
@@ -238,27 +240,43 @@ body {
 }
 
 .section-three {
-  position: absolute;
-  width: 1137.28px;
+  max-width: 80%;
   height: 1026px;
-  left: 220px;
-  top: 1613px;
+  margin: 0 auto;
+  padding: 50px;
   background: rgb(219, 219, 219);
+  @media ($xl) {
+    max-width: 1137.28px;
+    margin: 0;
+  }
+  //////////////////////
+  .content {
+    text-align: center;
+  }
+  .section-three__title {
+    color: $text-blue;
+    @extend %helvetica-700;
+    font-size: 40px;
+    line-height: 130%;
+    margin-bottom: 50px;
+  }
+  .section-three__paragraph {
+    color: $text-grey;
+    @extend %avenir-500;
+    font-size: 18px;
+    line-height: 160%;
+    max-width: 584px;
+    margin: 0 auto;
+  }
 }
 .section-four {
-  position: absolute;
   width: 1118px;
   height: 709px;
-  left: 242px;
-  top: 2789px;
   background: rgb(219, 219, 219);
 }
 
 .section-five {
-  position: absolute;
   width: 1600px;
   height: 613px;
-  left: 0px;
-  top: 3648px;
   background: rgb(219, 219, 219);
 }
