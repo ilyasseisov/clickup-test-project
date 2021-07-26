@@ -380,7 +380,7 @@ template {
   display: none !important;
 }
 
-.navigation__links li, .hero__paragraph, .section-two__paragraph, .section-three .section-three__paragraph {
+.navigation__links li, .hero__paragraph, .section-two__paragraph, .section-three__paragraph {
   font-family: "Avenir", Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
@@ -390,7 +390,7 @@ template {
   font-weight: 800;
 }
 
-.hero__title, .section-two__title, .section-three .section-three__title {
+.hero__title, .section-two__title, .section-three__title {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 700;
 }
@@ -719,36 +719,93 @@ body {
 
 .section-three {
   max-width: 80%;
-  height: 1026px;
   margin: 0 auto;
   padding: 50px;
-  background: #dbdbdb;
+  background: #f1f1f1;
 }
 
 @media (min-width: 1200px) {
   .section-three {
     max-width: 1137.28px;
+    height: 1026px;
     margin: 0;
   }
 }
 
 .section-three .content {
   text-align: center;
+  margin-bottom: 100px;
 }
 
-.section-three .section-three__title {
+.section-three__title {
   color: #212353;
   font-size: 40px;
   line-height: 130%;
   margin-bottom: 50px;
 }
 
-.section-three .section-three__paragraph {
+.section-three__paragraph {
   color: #4b5d68;
   font-size: 18px;
   line-height: 160%;
   max-width: 584px;
   margin: 0 auto;
+}
+
+.section-three .features {
+  background: rgba(156, 156, 156, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.section-three__feature {
+  width: 442px;
+  height: 358px;
+  opacity: 0.1;
+  margin-bottom: 30px;
+  padding-right: 50px;
+}
+
+.section-three__feature:nth-of-type(1) {
+  background: #68c9ba;
+  -webkit-clip-path: path("M44.2904 41.7355C48.3276 17.6466 69.1778 0.00012207 93.6026 0.00012207H383.285C410.899 0.00012207 433.285 22.3859 433.285 50.0001V308C433.285 335.614 410.899 358 383.285 358H50.3624C19.4471 358 -4.05989 330.226 1.05018 299.736L44.2904 41.7355Z");
+          clip-path: path("M44.2904 41.7355C48.3276 17.6466 69.1778 0.00012207 93.6026 0.00012207H383.285C410.899 0.00012207 433.285 22.3859 433.285 50.0001V308C433.285 335.614 410.899 358 383.285 358H50.3624C19.4471 358 -4.05989 330.226 1.05018 299.736L44.2904 41.7355Z");
+}
+
+@media (min-width: 1200px) {
+  .section-three__feature:nth-of-type(1) {
+    margin-bottom: 50px;
+  }
+}
+
+.section-three__feature:nth-of-type(2) {
+  background: #9c69e2;
+  -webkit-clip-path: path("M44.2894 41.7354C48.3267 17.6465 69.1768 0 93.6017 0H383.284C410.898 0 433.284 22.3858 433.284 50V308C433.284 335.614 410.898 358 383.284 358H50.3614C19.4461 358 -4.06087 330.225 1.0492 299.735L44.2894 41.7354Z");
+          clip-path: path("M44.2894 41.7354C48.3267 17.6465 69.1768 0 93.6017 0H383.284C410.898 0 433.284 22.3858 433.284 50V308C433.284 335.614 410.898 358 383.284 358H50.3614C19.4461 358 -4.06087 330.225 1.0492 299.735L44.2894 41.7354Z");
+}
+
+@media (min-width: 1200px) {
+  .section-three__feature:nth-of-type(2) {
+    margin-bottom: 50px;
+  }
+}
+
+.section-three__feature:nth-of-type(3) {
+  background: #f063b8;
+  -webkit-clip-path: path("M44.2904 41.7354C48.3276 17.6465 69.1778 0 93.6026 0H383.285C410.899 0 433.285 22.3858 433.285 50V308C433.285 335.614 410.899 358 383.285 358H50.3624C19.4471 358 -4.05989 330.225 1.05018 299.735L44.2904 41.7354Z");
+          clip-path: path("M44.2904 41.7354C48.3276 17.6465 69.1778 0 93.6026 0H383.285C410.899 0 433.285 22.3858 433.285 50V308C433.285 335.614 410.899 358 383.285 358H50.3624C19.4471 358 -4.05989 330.225 1.05018 299.735L44.2904 41.7354Z");
+}
+
+.section-three__feature:nth-of-type(4) {
+  background: #2d9cdb;
+  -webkit-clip-path: path("M44.2894 41.7355C48.3267 17.6466 69.1768 0.00012207 93.6017 0.00012207H383.284C410.898 0.00012207 433.284 22.3859 433.284 50.0001V308C433.284 335.614 410.898 358 383.284 358H50.3614C19.4461 358 -4.06087 330.226 1.0492 299.736L44.2894 41.7355Z");
+          clip-path: path("M44.2894 41.7355C48.3267 17.6466 69.1768 0.00012207 93.6017 0.00012207H383.284C410.898 0.00012207 433.284 22.3859 433.284 50.0001V308C433.284 335.614 410.898 358 383.284 358H50.3614C19.4461 358 -4.06087 330.226 1.0492 299.736L44.2894 41.7355Z");
 }
 
 .section-four {
