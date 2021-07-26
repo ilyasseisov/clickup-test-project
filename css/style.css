@@ -380,7 +380,7 @@ template {
   display: none !important;
 }
 
-.navigation__links li, .hero__paragraph, .section-two__paragraph {
+.navigation__links li, .hero__paragraph, .section-two__paragraph, .section-three .section-three__paragraph {
   font-family: "Avenir", Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
@@ -390,7 +390,7 @@ template {
   font-weight: 800;
 }
 
-.hero__title, .section-two__title {
+.hero__title, .section-two__title, .section-three .section-three__title {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 700;
 }
@@ -622,11 +622,13 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 50px;
+  margin-bottom: 150px;
 }
 
 @media (min-width: 1200px) {
   .section-two {
     margin: 0;
+    margin-bottom: 150px;
     max-width: 1117px;
     height: 560px;
     -webkit-box-orient: horizontal;
@@ -716,29 +718,48 @@ body {
 }
 
 .section-three {
-  position: absolute;
-  width: 1137.28px;
+  max-width: 80%;
   height: 1026px;
-  left: 220px;
-  top: 1613px;
+  margin: 0 auto;
+  padding: 50px;
   background: #dbdbdb;
 }
 
+@media (min-width: 1200px) {
+  .section-three {
+    max-width: 1137.28px;
+    margin: 0;
+  }
+}
+
+.section-three .content {
+  text-align: center;
+}
+
+.section-three .section-three__title {
+  color: #212353;
+  font-size: 40px;
+  line-height: 130%;
+  margin-bottom: 50px;
+}
+
+.section-three .section-three__paragraph {
+  color: #4b5d68;
+  font-size: 18px;
+  line-height: 160%;
+  max-width: 584px;
+  margin: 0 auto;
+}
+
 .section-four {
-  position: absolute;
   width: 1118px;
   height: 709px;
-  left: 242px;
-  top: 2789px;
   background: #dbdbdb;
 }
 
 .section-five {
-  position: absolute;
   width: 1600px;
   height: 613px;
-  left: 0px;
-  top: 3648px;
   background: #dbdbdb;
 }
 /*# sourceMappingURL=style.css.map */
