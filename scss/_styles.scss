@@ -1,10 +1,20 @@
 @import "variables";
 
+html {
+  @media ($xxl) {
+    padding-left: 120px;
+  }
+  @media ($xxxl) {
+    padding-left: 240px;
+  }
+}
+
 body {
   height: $body-height;
   background: linear-gradient(180deg, $body-grey 0%, $white 19.4%);
   overflow-x: hidden;
   position: relative;
+  border: 3px solid blue;
   @media ($xxl) {
     max-width: $body-width;
     margin: 0 auto;
@@ -12,16 +22,13 @@ body {
 }
 
 .section-one {
-  // position: absolute;
-  // height: 754px;
-  // left: 240px;
-  // top: 47px;
   background: rgb(219, 219, 219);
   margin-top: 47px;
+  margin-bottom: 102.18px;
   @media ($xxl) {
     width: 1248px;
-    margin: 0 auto;
     margin-top: 47px;
+    margin-bottom: 202.18px;
   }
 }
 
@@ -162,12 +169,72 @@ body {
 }
 
 .section-two {
-  position: absolute;
-  width: 1117px;
-  height: 560px;
-  left: 240px;
-  top: 903.18px;
-  background: rgb(219, 219, 219);
+  max-width: 80%;
+  background: rgba(240, 99, 184, 0.15);
+  border-radius: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  @media ($xl) {
+    margin: 0;
+    max-width: 1117px;
+    height: 560px;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .image {
+    order: 2;
+    text-align: center;
+    @media ($xl) {
+      margin-right: 62px;
+      order: 1;
+    }
+  }
+
+  &__image {
+    // background: rgb(207, 207, 207);
+    max-width: 75%;
+    @media ($lg) {
+      width: 477px;
+      max-width: 100%;
+    }
+  }
+
+  .content {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media ($xl) {
+      order: 2;
+    }
+  }
+
+  &__title {
+    color: $text-blue;
+    @extend %helvetica-700;
+    font-size: 40px;
+    line-height: 130%;
+    margin-bottom: 40px;
+    max-width: 70%;
+    @media ($md) {
+      max-width: 475px;
+    }
+  }
+  &__paragraph {
+    color: $text-grey;
+    @extend %avenir-500;
+    font-size: 18px;
+    line-height: 160%;
+    max-width: 70%;
+    @media ($md) {
+      max-width: 469px;
+    }
+  }
 }
 
 .section-three {
