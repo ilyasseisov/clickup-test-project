@@ -475,8 +475,38 @@ body {
   margin-right: 121px;
 }
 
+.navigation__block2 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navigation__block2 {
+    display: block;
+  }
+}
+
 .navigation__block3 {
   margin-left: auto;
+}
+
+.navigation__block3 > .navigation__button {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navigation__block3 > .navigation__button {
+    display: block;
+  }
+}
+
+.navigation__block3 > .navigation__trigger {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .navigation__block3 > .navigation__trigger {
+    display: none;
+  }
 }
 
 .navigation__logo {
@@ -521,6 +551,22 @@ body {
   height: 14px;
   vertical-align: middle;
   margin-left: 20px;
+}
+
+.navigation__trigger {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+          box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  display: block;
+  background: #fff url(../assets/img/menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
 }
 
 .hero {
