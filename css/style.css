@@ -529,16 +529,18 @@ body {
 
 .hero__title {
   color: #212353;
-  font-size: 80px;
+  font-size: 50px;
   line-height: 110%;
   margin-left: 12px;
-  margin-bottom: 50px;
-  max-width: 75%;
+  margin-bottom: 30px;
+  max-width: 65%;
 }
 
 @media (min-width: 768px) {
   .hero__title {
     max-width: 60%;
+    font-size: 80px;
+    margin-bottom: 50px;
   }
 }
 
@@ -551,11 +553,19 @@ body {
 
 .hero__paragraph {
   color: #4b5d68;
-  font-size: 18px;
-  line-height: 160%;
-  margin-bottom: 50px;
+  font-size: 14px;
+  line-height: 130%;
+  margin-bottom: 30px;
   margin-left: 12px;
   max-width: 50%;
+}
+
+@media (min-width: 768px) {
+  .hero__paragraph {
+    font-size: 18px;
+    line-height: 160%;
+    margin-bottom: 50px;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -569,12 +579,20 @@ body {
 .hero__button {
   color: #fff;
   background: #9c69e2;
-  padding: 16px 37px;
+  padding: 12px 30px;
   border-radius: 50px;
-  font-size: 18px;
-  line-height: 160%;
+  font-size: 14px;
+  line-height: 130%;
   display: inline-block;
   margin-left: 12px;
+}
+
+@media (min-width: 768px) {
+  .hero__button {
+    font-size: 18px;
+    line-height: 160%;
+    padding: 16px 37px;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -703,7 +721,7 @@ body {
 .section-two__title {
   color: #212353;
   font-size: 28px;
-  line-height: 100%;
+  line-height: 110%;
   margin-bottom: 30px;
   max-width: 70%;
 }
@@ -762,7 +780,7 @@ body {
 .section-three__title {
   color: #212353;
   font-size: 28px;
-  line-height: 100%;
+  line-height: 110%;
   margin-bottom: 30px;
 }
 
