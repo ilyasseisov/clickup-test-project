@@ -50,8 +50,28 @@ body {
   &__block1 {
     margin-right: 121px;
   }
+  &__block2 {
+    display: none;
+    @media ($md) {
+      display: block;
+    }
+  }
+
   &__block3 {
     margin-left: auto;
+  }
+
+  &__block3 > .navigation__button {
+    display: none;
+    @media ($md) {
+      display: block;
+    }
+  }
+  &__block3 > .navigation__trigger {
+    display: block;
+    @media ($md) {
+      display: none;
+    }
   }
   &__logo {
     width: 49px;
@@ -94,6 +114,20 @@ body {
     height: 14px;
     vertical-align: middle;
     margin-left: 20px;
+  }
+  &__trigger {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+    display: block;
+    background: $white url(../assets/img/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
   }
 }
 
