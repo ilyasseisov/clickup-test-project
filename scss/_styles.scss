@@ -101,14 +101,16 @@ body {
   position: relative;
   &__title {
     color: $text-blue;
-    font-size: 80px;
+    font-size: 50px;
     line-height: 110%;
     @extend %helvetica-700;
     margin-left: $indent;
-    margin-bottom: 50px;
-    max-width: 75%;
+    margin-bottom: 30px;
+    max-width: 65%;
     @media ($md) {
       max-width: 60%;
+      font-size: 80px;
+      margin-bottom: 50px;
     }
     @media ($xxl) {
       max-width: 100%;
@@ -117,12 +119,17 @@ body {
   }
   &__paragraph {
     color: $text-grey;
-    font-size: 18px;
-    line-height: 160%;
+    font-size: 14px;
+    line-height: 130%;
     @extend %avenir-500;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-left: $indent;
     max-width: 50%;
+    @media ($md) {
+      font-size: 18px;
+      line-height: 160%;
+      margin-bottom: 50px;
+    }
     @media ($xxl) {
       width: 380px;
       margin-left: 0px;
@@ -132,13 +139,18 @@ body {
   &__button {
     color: $white;
     background: $purple;
-    padding: 16px 37px;
+    padding: 12px 30px;
     border-radius: 50px;
-    font-size: 18px;
-    line-height: 160%;
+    font-size: 14px;
+    line-height: 130%;
     display: inline-block;
     margin-left: $indent;
     @extend %avenir-800;
+    @media ($md) {
+      font-size: 18px;
+      line-height: 160%;
+      padding: 16px 37px;
+    }
     @media ($xxl) {
       margin-left: 0;
     }
@@ -220,7 +232,7 @@ body {
     color: $text-blue;
     @extend %helvetica-700;
     font-size: 28px;
-    line-height: 100%;
+    line-height: 110%;
     margin-bottom: 30px;
     max-width: 70%;
     @media ($md) {
@@ -267,7 +279,7 @@ body {
     color: $text-blue;
     @extend %helvetica-700;
     font-size: 28px;
-    line-height: 100%;
+    line-height: 110%;
     margin-bottom: 30px;
     @media ($md) {
       font-size: 40px;
