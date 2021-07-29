@@ -702,28 +702,33 @@ body {
 
 .section-two__title {
   color: #212353;
-  font-size: 40px;
-  line-height: 130%;
-  margin-bottom: 40px;
+  font-size: 28px;
+  line-height: 100%;
+  margin-bottom: 30px;
   max-width: 70%;
 }
 
 @media (min-width: 768px) {
   .section-two__title {
     max-width: 475px;
+    font-size: 40px;
+    line-height: 130%;
+    margin-bottom: 40px;
   }
 }
 
 .section-two__paragraph {
   color: #4b5d68;
-  font-size: 18px;
-  line-height: 160%;
+  font-size: 14px;
+  line-height: 130%;
   max-width: 70%;
 }
 
 @media (min-width: 768px) {
   .section-two__paragraph {
     max-width: 469px;
+    font-size: 18px;
+    line-height: 160%;
   }
 }
 
