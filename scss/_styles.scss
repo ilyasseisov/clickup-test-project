@@ -295,10 +295,12 @@ body {
   margin: 0 auto;
   padding: 30px;
   background: rgb(241, 241, 241);
+  margin-bottom: 150px;
   @media ($xl) {
     max-width: 1137.28px;
     height: 1026px;
     margin: 0;
+    margin-bottom: 150px;
     padding: 50px;
   }
   //////////////////////
@@ -482,7 +484,37 @@ body {
 .section-four {
   width: 1118px;
   height: 709px;
-  background: rgb(219, 219, 219);
+  border-radius: 50px;
+  background: $purple;
+  padding-top: 109px;
+  padding-left: 93px;
+  &__title {
+    font-size: 40px;
+    line-height: 130%;
+    color: $white;
+    @extend %helvetica-700;
+    margin-bottom: 88px;
+  }
+  &__cards {
+    display: flex;
+    overflow-x: hidden;
+    // background: rgb(180, 180, 180);
+    height: 350px;
+  }
+  &__card {
+    flex: 0 0 auto;
+    width: 645px;
+    height: 330px;
+    background: #ffffff;
+    box-shadow: 0px 20px 0px rgba(138, 86, 219, 1);
+    border-radius: 20px;
+    margin-right: 20px;
+  }
+
+  &__card:nth-of-type(2) {
+    box-shadow: 0px 20px 0px rgba(150, 99, 224, 1);
+    background: linear-gradient(90deg, $white 0%, $purple 100%);
+  }
 }
 
 .section-five {
