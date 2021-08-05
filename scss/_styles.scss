@@ -482,44 +482,80 @@ body {
 }
 ///////////////////////////////////////
 .section-four {
-  width: 1118px;
-  height: 709px;
+  max-width: 90%;
+  margin: 0 auto;
   border-radius: 50px;
   background: $purple;
-  padding-top: 109px;
-  padding-left: 93px;
+  padding-top: 55px;
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-bottom: 55px;
+  @media ($lg) {
+    max-width: 1118px;
+    height: 709px;
+    margin: 0;
+    padding-left: 93px;
+    padding-top: 109px;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
   &__title {
-    font-size: 40px;
-    line-height: 130%;
+    font-size: 28px;
+    line-height: 100%;
     color: $white;
     @extend %helvetica-700;
-    margin-bottom: 88px;
+    margin-bottom: 44px;
+    @media ($lg) {
+      margin-bottom: 88px;
+      font-size: 40px;
+      line-height: 130%;
+    }
   }
   .cards {
     display: flex;
-    overflow-x: hidden;
     // background: rgb(180, 180, 180);
-    height: 350px;
+    // height: 350px;
     margin-bottom: 38px;
+    @media ($lg) {
+      overflow-x: hidden;
+      height: 350px;
+    }
   }
   &__card {
-    flex: 0 0 auto;
-    width: 645px;
-    height: 330px;
     background: #ffffff;
     box-shadow: 0px 20px 0px rgba(138, 86, 219, 1);
     border-radius: 20px;
-    margin-right: 20px;
-    padding: 60px 70px 50px 70px;
-    display: flex;
+    padding: 45px 52.5px 37.5px 52.5px;
+    display: block;
+    @media ($lg) {
+      flex: 0 0 auto;
+      display: flex;
+      padding: 60px 70px 50px 70px;
+    }
+  }
+
+  &__card:nth-of-type(1) {
+    // max-width: 80%;
+    margin-right: 0;
+    @media ($lg) {
+      max-width: 645px;
+      height: 330px;
+      margin: 0;
+      margin-right: 20px;
+    }
   }
 
   &__card:nth-of-type(2) {
     box-shadow: 0px 20px 0px rgba(150, 99, 224, 1);
     background: linear-gradient(90deg, $white 0%, $purple 100%);
     width: 400px;
-    margin-right: 0;
+    height: 330px;
     padding-right: 0;
+    display: none;
+    @media ($lg) {
+      display: flex;
+    }
   }
 
   &__card:nth-of-type(2) p {
@@ -566,7 +602,10 @@ body {
     height: 14px;
     display: flex;
     justify-content: space-between;
-    padding-right: 76px;
+    padding-right: 20px;
+    @media ($lg) {
+      padding-right: 76px;
+    }
   }
   .dots {
     display: flex;
