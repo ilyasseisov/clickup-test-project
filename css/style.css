@@ -380,7 +380,7 @@ template {
   display: none !important;
 }
 
-.section-three__feature-paragraph, .section-four__paragraph, .section-five .footer__email, .section-five .footer__phone {
+.section-three__feature-paragraph, .section-four__paragraph, .section-five .footer__email, .section-five .footer__phone, .section-five .footer__link {
   font-family: "Avenir", Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
@@ -393,6 +393,11 @@ template {
 .navigation li.navigation__links_active, .navigation__button, .hero__button, .section-three__feature-button, .section-four__client, .section-five__button, .section-five .footer__logo-title {
   font-family: "Avenir", Arial, Helvetica, sans-serif;
   font-weight: 800;
+}
+
+.section-five .footer__link:first-of-type {
+  font-family: "Avenir", Arial, Helvetica, sans-serif;
+  font-weight: 900;
 }
 
 .section-three__feature-title {
@@ -1372,6 +1377,13 @@ body {
   height: 311.2px;
   background: #dffffc;
   padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-five .footer .block_1 {
+  margin-right: 140px;
 }
 
 .section-five .footer .logo {
@@ -1415,5 +1427,18 @@ body {
   line-height: 180%;
   color: #212353;
   letter-spacing: 0.01em;
+}
+
+.section-five .footer__link {
+  font-size: 16px;
+  line-height: 250%;
+  color: #212353;
+}
+
+.section-five .footer__link:first-of-type {
+  font-size: 16px;
+  line-height: 160%;
+  color: #212353;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -734,6 +734,10 @@ body {
     height: 311.2px;
     background: #dffffc;
     padding-top: 50px;
+    display: flex;
+    .block_1 {
+      margin-right: 140px;
+    }
     .logo {
       background: rgb(214, 255, 225);
       display: flex;
@@ -775,6 +779,19 @@ body {
       color: $text-blue;
       @extend %avenir-400;
       letter-spacing: 0.01em;
+    }
+    &__link {
+      font-size: 16px;
+      line-height: 250%;
+      color: $text-blue;
+      @extend %avenir-400;
+    }
+    &__link:first-of-type {
+      font-size: 16px;
+      line-height: 160%;
+      color: $text-blue;
+      @extend %avenir-900;
+      margin-bottom: 30px;
     }
   }
 }
