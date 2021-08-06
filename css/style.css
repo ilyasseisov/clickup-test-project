@@ -1446,4 +1446,17 @@ body {
   color: #212353;
   margin-bottom: 30px;
 }
+
+.section-five .footer__sm {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #e9e9ee;
+  display: inline-block;
+  margin-right: 14px;
+}
+
+.section-five .footer__sm:last-of-type {
+  margin-right: 0;
+}
 /*# sourceMappingURL=style.css.map */

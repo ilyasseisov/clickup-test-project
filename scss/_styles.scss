@@ -797,5 +797,16 @@ body {
       @extend %avenir-900;
       margin-bottom: 30px;
     }
+    &__sm {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #e9e9ee;
+      display: inline-block;
+      margin-right: 14px;
+    }
+    &__sm:last-of-type {
+      margin-right: 0;
+    }
   }
 }
