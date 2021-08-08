@@ -649,11 +649,12 @@ body {
   max-width: 90%;
   margin: 0 auto;
   background: rgb(219, 219, 219);
-  padding-top: 100px;
+  // padding-top: 100px;
   padding-right: 0;
   padding-bottom: 89px;
   @media ($xxl) {
     padding-right: 243px;
+    padding-top: 100px;
     width: 100%;
     height: 613px;
     margin: 0;
@@ -662,11 +663,12 @@ body {
   .pre-footer {
     display: block;
     background: rgb(253, 215, 215);
-    margin-bottom: 102px;
+    margin-bottom: 51px;
     @media ($md) {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-bottom: 102px;
     }
     @media ($xxl) {
       padding-right: 0;
@@ -741,7 +743,10 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
-
+    justify-content: center;
+    @media ($lg) {
+      justify-content: left;
+    }
     @media ($xxxl) {
       flex-direction: row;
       flex-wrap: nowrap;
@@ -757,15 +762,17 @@ body {
     }
 
     .block_1 {
+      width: 80%;
       margin-right: 0;
-      width: 100%;
       margin-bottom: 20px;
       order: 3;
+      text-align: center;
       @media ($lg) {
         order: 1;
         width: auto;
         margin-right: 80px;
         margin-bottom: 0;
+        text-align: left;
       }
       @media ($xxxl) {
         margin-right: 100px;
@@ -776,6 +783,10 @@ body {
       display: flex;
       align-items: center;
       margin-bottom: 66px;
+      justify-content: center;
+      @media ($lg) {
+        justify-content: left;
+      }
     }
 
     &__logo {
@@ -855,8 +866,12 @@ body {
     }
     .block_4 {
       order: 4;
+      width: 80%;
+      text-align: center;
       @media ($lg) {
         order: 4;
+        width: auto;
+        text-align: left;
       }
     }
     &__sm {
