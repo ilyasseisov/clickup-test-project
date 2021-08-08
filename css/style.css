@@ -1371,9 +1371,10 @@ body {
   background: #f063b8;
   color: #fff;
   margin-right: 30px;
+  margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .section-five__button:nth-of-type(1) {
     margin-bottom: 0;
   }
@@ -1407,8 +1408,31 @@ body {
   }
 }
 
+.section-five .footer .block_1,
+.section-five .footer .block_2,
+.section-five .footer .block_3,
+.section-five .footer .block_4 {
+  background: #ffe2e2;
+}
+
 .section-five .footer .block_1 {
-  margin-right: 80px;
+  margin-right: 0;
+  width: 100%;
+  margin-bottom: 20px;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+@media (min-width: 992px) {
+  .section-five .footer .block_1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: auto;
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -1461,8 +1485,21 @@ body {
 }
 
 .section-five .footer .block_2 {
-  margin-right: 30px;
   width: 140px;
+  margin-bottom: 20px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media (min-width: 992px) {
+  .section-five .footer .block_2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -1473,8 +1510,21 @@ body {
 }
 
 .section-five .footer .block_3 {
-  margin-right: 30px;
   width: 140px;
+  margin-bottom: 20px;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media (min-width: 992px) {
+  .section-five .footer .block_3 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -1495,6 +1545,20 @@ body {
   line-height: 160%;
   color: #212353;
   margin-bottom: 30px;
+}
+
+.section-five .footer .block_4 {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+@media (min-width: 992px) {
+  .section-five .footer .block_4 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
 }
 
 .section-five .footer__sm {

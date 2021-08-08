@@ -728,8 +728,8 @@ body {
     background: $pink;
     color: $white;
     margin-right: 30px;
-    // margin-bottom: 20px;
-    @media ($md) {
+    margin-bottom: 20px;
+    @media ($sm) {
       margin-bottom: 0;
     }
   }
@@ -741,9 +741,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
-    @media ($xxl) {
-      // max-width: 90%;
-    }
+
     @media ($xxxl) {
       flex-direction: row;
       flex-wrap: nowrap;
@@ -751,18 +749,24 @@ body {
       height: 311.2px;
     }
 
-    // .block_1,
-    // .block_2,
-    // .block_3,
-    // .block_4 {
-    //   width: 40%;
-    //   @media ($lg) {
-    //     width: auto;
-    //   }
-    // }
+    .block_1,
+    .block_2,
+    .block_3,
+    .block_4 {
+      background: rgb(255, 226, 226);
+    }
 
     .block_1 {
-      margin-right: 80px;
+      margin-right: 0;
+      width: 100%;
+      margin-bottom: 20px;
+      order: 3;
+      @media ($lg) {
+        order: 1;
+        width: auto;
+        margin-right: 80px;
+        margin-bottom: 0;
+      }
       @media ($xxxl) {
         margin-right: 100px;
       }
@@ -809,16 +813,28 @@ body {
       letter-spacing: 0.01em;
     }
     .block_2 {
-      margin-right: 30px;
       width: 140px;
+      margin-bottom: 20px;
+      order: 1;
+      @media ($lg) {
+        order: 2;
+        margin-right: 30px;
+        margin-bottom: 0;
+      }
       @media ($xxxl) {
         margin-right: 50px;
         width: 160px;
       }
     }
     .block_3 {
-      margin-right: 30px;
       width: 140px;
+      margin-bottom: 20px;
+      order: 2;
+      @media ($lg) {
+        order: 3;
+        margin-right: 30px;
+        margin-bottom: 0;
+      }
       @media ($xxxl) {
         margin-right: 50px;
         width: 160px;
@@ -836,6 +852,12 @@ body {
       color: $text-blue;
       @extend %avenir-900;
       margin-bottom: 30px;
+    }
+    .block_4 {
+      order: 4;
+      @media ($lg) {
+        order: 4;
+      }
     }
     &__sm {
       width: 50px;
