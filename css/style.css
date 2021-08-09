@@ -1270,8 +1270,8 @@ body {
 
 @media (min-width: 1400px) {
   .section-five {
-    padding-right: 243px;
-    padding-top: 100px;
+    padding-right: 226px;
+    padding-top: 103px;
     width: 100%;
     height: 613px;
     margin: 0;
@@ -1370,6 +1370,7 @@ body {
   color: #fff;
   margin-right: 30px;
   margin-bottom: 20px;
+  padding: 17px 40px;
 }
 
 @media (min-width: 576px) {
