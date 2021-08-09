@@ -684,7 +684,7 @@ body {
   padding-right: 0;
   padding-bottom: 89px;
   @media ($xxl) {
-    padding-right: 230px;
+    // padding-right: 230px;
     padding-top: 103px;
     width: 100%;
     height: 613px;
@@ -702,8 +702,10 @@ body {
       margin-bottom: 102px;
     }
     @media ($xxl) {
-      padding-right: 0;
       padding-left: 0;
+      width: 1118.2px;
+    }
+    @media ($xxxl) {
     }
   }
 
@@ -713,10 +715,6 @@ body {
     @media ($md) {
       margin-bottom: 0;
     }
-  }
-
-  .buttons {
-    // background: rgb(255, 234, 234);
   }
 
   &__title {
@@ -770,7 +768,7 @@ body {
   }
 
   .footer {
-    // background: #dffffc;
+    background: #dffffc;
     padding-top: 50px;
     display: flex;
     flex-direction: row;
@@ -780,12 +778,12 @@ body {
     @media ($lg) {
       justify-content: left;
     }
-    @media ($xxxl) {
+    @media ($xxl) {
       flex-direction: row;
       flex-wrap: nowrap;
       width: 1118.2px;
       height: 311.2px;
-      margin-left: 0;
+      margin: 0;
     }
 
     .block_1 {
@@ -801,7 +799,7 @@ body {
         margin-bottom: 0;
         text-align: left;
       }
-      @media ($xxxl) {
+      @media ($xxl) {
         margin-right: 233px;
       }
     }
@@ -809,7 +807,7 @@ body {
       // background: rgb(214, 255, 225);
       display: flex;
       align-items: center;
-      margin-bottom: 66px;
+      margin-bottom: 60px;
       justify-content: center;
       @media ($lg) {
         justify-content: left;
@@ -817,8 +815,8 @@ body {
     }
 
     &__logo {
-      width: 49px;
-      height: 35px;
+      width: calc(49px * 1.1);
+      height: calc(35px * 1.1);
       margin-right: 20px;
       // background: rgb(211, 211, 211);
     }
@@ -861,7 +859,7 @@ body {
         margin-right: 30px;
         margin-bottom: 0;
       }
-      @media ($xxxl) {
+      @media ($xxl) {
         margin-right: 145px;
         padding-top: 10px;
         width: auto;
@@ -879,7 +877,7 @@ body {
         margin-right: 30px;
         margin-bottom: 0;
       }
-      @media ($xxxl) {
+      @media ($xxl) {
         margin-right: 158px;
         padding-top: 10px;
         width: auto;
@@ -908,7 +906,7 @@ body {
         width: auto;
         text-align: left;
       }
-      @media ($xxxl) {
+      @media ($xxl) {
         padding-top: 10px;
       }
     }
