@@ -808,7 +808,7 @@ body {
     max-width: 1175px;
     height: 1026px;
     margin: 0;
-    margin-bottom: 150px;
+    margin-bottom: 199px;
     padding: 50px;
   }
 }
@@ -1157,6 +1157,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-left: 40px;
+    padding-top: 54px;
   }
 }
 

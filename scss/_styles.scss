@@ -300,7 +300,7 @@ body {
     max-width: 1175px;
     height: 1026px;
     margin: 0;
-    margin-bottom: 150px;
+    margin-bottom: 199px;
     padding: 50px;
   }
   //////////////////////
@@ -517,8 +517,6 @@ body {
   }
   .cards {
     display: flex;
-    // background: rgb(180, 180, 180);
-    // height: 350px;
     margin-bottom: 38px;
     @media ($lg) {
       overflow-x: hidden;
@@ -539,7 +537,6 @@ body {
   }
 
   &__card:nth-of-type(1) {
-    // max-width: 80%;
     margin-right: 0;
     @media ($lg) {
       max-width: 645px;
@@ -558,6 +555,8 @@ body {
     display: none;
     @media ($lg) {
       display: flex;
+      padding-left: 40px;
+      padding-top: 54px;
     }
   }
 
