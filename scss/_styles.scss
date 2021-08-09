@@ -649,11 +649,10 @@ body {
   max-width: 90%;
   margin: 0 auto;
   background: rgb(219, 219, 219);
-  // padding-top: 100px;
   padding-right: 0;
   padding-bottom: 89px;
   @media ($xxl) {
-    padding-right: 226px;
+    padding-right: 230px;
     padding-top: 103px;
     width: 100%;
     height: 613px;
@@ -752,8 +751,9 @@ body {
     @media ($xxxl) {
       flex-direction: row;
       flex-wrap: nowrap;
-      width: 1085px;
+      width: 1118.2px;
       height: 311.2px;
+      margin-left: 0;
     }
 
     .block_1,
@@ -777,7 +777,7 @@ body {
         text-align: left;
       }
       @media ($xxxl) {
-        margin-right: 100px;
+        margin-right: 233px;
       }
     }
     .logo {
@@ -806,7 +806,7 @@ body {
     }
 
     .address {
-      margin-bottom: 10px;
+      margin-bottom: 17px;
     }
 
     &__address {
@@ -835,8 +835,9 @@ body {
         margin-bottom: 0;
       }
       @media ($xxxl) {
-        margin-right: 50px;
-        width: 160px;
+        margin-right: 145px;
+        padding-top: 10px;
+        width: auto;
       }
     }
     .block_3 {
@@ -849,8 +850,9 @@ body {
         margin-bottom: 0;
       }
       @media ($xxxl) {
-        margin-right: 50px;
-        width: 160px;
+        margin-right: 158px;
+        padding-top: 10px;
+        width: auto;
       }
     }
     &__link {
@@ -864,7 +866,7 @@ body {
       line-height: 160%;
       color: $text-blue;
       @extend %avenir-900;
-      margin-bottom: 30px;
+      margin-bottom: 34px;
     }
     .block_4 {
       order: 4;
@@ -874,6 +876,9 @@ body {
         order: 4;
         width: auto;
         text-align: left;
+      }
+      @media ($xxxl) {
+        padding-top: 10px;
       }
     }
     &__sm {
