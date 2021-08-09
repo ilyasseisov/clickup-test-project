@@ -5,7 +5,7 @@ html {
     padding-left: 120px;
   }
   @media ($xxxl) {
-    padding-left: 240px;
+    // padding-left: 240px;
   }
 }
 
@@ -28,7 +28,7 @@ body {
   @media ($xxl) {
     width: 1248px;
     margin-top: 47px;
-    margin-bottom: 202.18px;
+    margin-bottom: 207.18px;
   }
 }
 
@@ -74,8 +74,8 @@ body {
     }
   }
   &__logo {
-    width: 49px;
-    height: 35px;
+    width: calc(49px * 1.1);
+    height: calc(35px * 1.1);
   }
   &__links li {
     cursor: pointer;
@@ -144,7 +144,7 @@ body {
     @media ($md) {
       max-width: 60%;
       font-size: 80px;
-      margin-bottom: 50px;
+      margin-bottom: 60px;
     }
     @media ($xxl) {
       max-width: 100%;
@@ -224,10 +224,10 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 50px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   @media ($xl) {
     margin: 0;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     max-width: 1117px;
     height: 560px;
     flex-direction: row;
@@ -238,7 +238,7 @@ body {
     order: 2;
     text-align: center;
     @media ($xl) {
-      margin-right: 62px;
+      margin-right: 71px;
       order: 1;
     }
   }

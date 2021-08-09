@@ -416,12 +416,6 @@ template {
   }
 }
 
-@media (min-width: 1600px) {
-  html {
-    padding-left: 240px;
-  }
-}
-
 body {
   height: 4350px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f6fafd), color-stop(19.4%, #fff));
@@ -448,7 +442,7 @@ body {
   .section-one {
     width: 1248px;
     margin-top: 47px;
-    margin-bottom: 202.18px;
+    margin-bottom: 207.18px;
   }
 }
 
@@ -515,8 +509,8 @@ body {
 }
 
 .navigation__logo {
-  width: 49px;
-  height: 35px;
+  width: calc(49px * 1.1);
+  height: calc(35px * 1.1);
 }
 
 .navigation__links li {
@@ -591,7 +585,7 @@ body {
   .hero__title {
     max-width: 60%;
     font-size: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 }
 
@@ -701,13 +695,13 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 50px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 @media (min-width: 1200px) {
   .section-two {
     margin: 0;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     max-width: 1117px;
     height: 560px;
     -webkit-box-orient: horizontal;
@@ -727,7 +721,7 @@ body {
 
 @media (min-width: 1200px) {
   .section-two .image {
-    margin-right: 62px;
+    margin-right: 71px;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
