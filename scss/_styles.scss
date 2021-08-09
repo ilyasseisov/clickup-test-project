@@ -4,9 +4,6 @@ html {
   @media ($xxl) {
     padding-left: 120px;
   }
-  @media ($xxxl) {
-    // padding-left: 240px;
-  }
 }
 
 body {
@@ -14,7 +11,7 @@ body {
   background: linear-gradient(180deg, $body-grey 0%, $white 19.4%);
   overflow-x: hidden;
   position: relative;
-  border: 3px solid blue;
+  // border: 3px solid blue;
   @media ($xxl) {
     max-width: $body-width;
     margin: 0 auto;
@@ -22,7 +19,7 @@ body {
 }
 
 .section-one {
-  background: rgb(219, 219, 219);
+  // background: rgb(219, 219, 219);
   margin-top: 47px;
   margin-bottom: 102.18px;
   @media ($xxl) {
@@ -39,8 +36,10 @@ body {
   padding-right: $indent;
   display: flex;
   align-items: center;
-  margin-bottom: 130px;
-  background: rgb(255, 180, 180);
+  margin-bottom: 65px;
+  @media ($md) {
+    margin-bottom: 130px;
+  }
   @media ($xxl) {
     width: 1120px;
     margin-right: auto;
@@ -133,6 +132,7 @@ body {
 
 .hero {
   position: relative;
+  top: 3.5px;
   &__title {
     color: $text-blue;
     font-size: 50px;
@@ -190,7 +190,7 @@ body {
     }
   }
   & .content {
-    background: rgb(83, 213, 218);
+    // background: rgb(83, 213, 218);
     margin-bottom: 50px;
     @media ($xxl) {
       width: 645px;
@@ -294,7 +294,7 @@ body {
   max-width: 90%;
   margin: 0 auto;
   padding: 30px;
-  background: rgb(241, 241, 241);
+  // background: rgb(241, 241, 241);
   margin-bottom: 150px;
   @media ($xl) {
     max-width: 1175px;
@@ -342,7 +342,7 @@ body {
   }
 
   .features {
-    background: rgba(156, 156, 156, 0.25);
+    // background: rgba(156, 156, 156, 0.25);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -680,7 +680,7 @@ body {
 .section-five {
   max-width: 90%;
   margin: 0 auto;
-  background: rgb(219, 219, 219);
+  // background: rgb(219, 219, 219);
   padding-right: 0;
   padding-bottom: 89px;
   @media ($xxl) {
@@ -693,7 +693,7 @@ body {
 
   .pre-footer {
     display: block;
-    background: rgb(253, 215, 215);
+    // background: rgb(253, 215, 215);
     margin-bottom: 51px;
     @media ($md) {
       display: flex;
@@ -708,7 +708,7 @@ body {
   }
 
   .content {
-    background: rgb(255, 234, 234);
+    // background: rgb(255, 234, 234);
     margin-bottom: 40px;
     @media ($md) {
       margin-bottom: 0;
@@ -716,7 +716,7 @@ body {
   }
 
   .buttons {
-    background: rgb(255, 234, 234);
+    // background: rgb(255, 234, 234);
   }
 
   &__title {
@@ -770,7 +770,7 @@ body {
   }
 
   .footer {
-    background: #dffffc;
+    // background: #dffffc;
     padding-top: 50px;
     display: flex;
     flex-direction: row;
@@ -788,17 +788,10 @@ body {
       margin-left: 0;
     }
 
-    .block_1,
-    .block_2,
-    .block_3,
-    .block_4 {
-      background: rgb(255, 226, 226);
-    }
-
     .block_1 {
       width: 80%;
       margin-right: 0;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       order: 3;
       text-align: center;
       @media ($lg) {
@@ -813,7 +806,7 @@ body {
       }
     }
     .logo {
-      background: rgb(214, 255, 225);
+      // background: rgb(214, 255, 225);
       display: flex;
       align-items: center;
       margin-bottom: 66px;
@@ -827,14 +820,14 @@ body {
       width: 49px;
       height: 35px;
       margin-right: 20px;
-      background: rgb(211, 211, 211);
+      // background: rgb(211, 211, 211);
     }
     &__logo-title {
       font-size: 20px;
       line-height: 160%;
       color: $text-blue;
       @extend %avenir-800;
-      background: rgb(255, 228, 228);
+      // background: rgb(255, 228, 228);
     }
 
     .address {
@@ -859,8 +852,10 @@ body {
     }
     .block_2 {
       width: 140px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       order: 1;
+      text-align: center;
+
       @media ($lg) {
         order: 2;
         margin-right: 30px;
@@ -870,12 +865,15 @@ body {
         margin-right: 145px;
         padding-top: 10px;
         width: auto;
+        text-align: left;
       }
     }
     .block_3 {
       width: 140px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       order: 2;
+      text-align: center;
+
       @media ($lg) {
         order: 3;
         margin-right: 30px;
@@ -885,6 +883,7 @@ body {
         margin-right: 158px;
         padding-top: 10px;
         width: auto;
+        text-align: left;
       }
     }
     &__link {
