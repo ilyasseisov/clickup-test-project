@@ -805,7 +805,7 @@ body {
 
 @media (min-width: 1200px) {
   .section-three {
-    max-width: 1137.28px;
+    max-width: 1175px;
     height: 1026px;
     margin: 0;
     margin-bottom: 150px;
@@ -820,7 +820,7 @@ body {
 
 @media (min-width: 768px) {
   .section-three .content {
-    margin-bottom: 100px;
+    margin-bottom: 108px;
   }
 }
 
@@ -836,6 +836,7 @@ body {
     font-size: 40px;
     line-height: 130%;
     margin-bottom: 50px;
+    padding-right: 60px;
   }
 }
 
@@ -904,8 +905,8 @@ body {
     width: 442px;
     height: 358px;
     padding-bottom: 0px;
-    padding-right: 50px;
-    padding-left: 172px;
+    padding-right: 30px;
+    padding-left: 160px;
     padding-top: 49px;
   }
 }
@@ -977,7 +978,7 @@ body {
   .section-three__feature-title {
     font-size: 24px;
     line-height: 130%;
-    margin-bottom: 20px;
+    margin-bottom: 30.22px;
   }
 }
 
@@ -1006,7 +1007,7 @@ body {
 @media (min-width: 768px) {
   .section-three__feature-button {
     position: absolute;
-    bottom: 33px;
+    bottom: 41px;
     font-size: 16px;
     line-height: 160%;
   }
