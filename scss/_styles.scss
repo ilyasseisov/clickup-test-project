@@ -7,13 +7,14 @@ html {
 }
 
 body {
-  height: $body-height;
+  height: auto;
   background: linear-gradient(180deg, $body-grey 0%, $white 19.4%);
   overflow-x: hidden;
   position: relative;
   // border: 3px solid blue;
   @media ($xxl) {
     max-width: $body-width;
+    height: $body-height;
     margin: 0 auto;
   }
 }
@@ -47,12 +48,14 @@ body {
     padding-left: 0;
   }
   &__block1 {
-    margin-right: 121px;
+    margin-right: 118px;
   }
   &__block2 {
     display: none;
     @media ($md) {
       display: block;
+      position: relative;
+      // left: -7px;
     }
   }
 
@@ -148,7 +151,7 @@ body {
     @media ($md) {
       max-width: 60%;
       font-size: 80px;
-      margin-bottom: 60px;
+      margin-bottom: 55px;
     }
     @media ($xxl) {
       max-width: 100%;
@@ -166,12 +169,14 @@ body {
     @media ($md) {
       font-size: 18px;
       line-height: 160%;
-      margin-bottom: 50px;
+      margin-bottom: 54px;
     }
     @media ($xxl) {
       width: 380px;
       margin-left: 0px;
       max-width: 100%;
+      position: relative;
+      left: 4px;
     }
   }
   &__button {
@@ -191,6 +196,8 @@ body {
     }
     @media ($xxl) {
       margin-left: 0;
+      position: relative;
+      left: 2px;
     }
   }
   &__button:hover {
@@ -215,7 +222,7 @@ body {
       width: 885px;
       max-width: 100%;
       position: absolute;
-      top: 100px;
+      top: 94px;
       right: 0;
     }
   }
@@ -245,7 +252,7 @@ body {
     order: 2;
     text-align: center;
     @media ($xl) {
-      margin-right: 71px;
+      margin-right: 74px;
       order: 1;
     }
   }
@@ -256,6 +263,9 @@ body {
     @media ($lg) {
       width: 477px;
       max-width: 100%;
+      position: relative;
+      top: 5px;
+      left: 15px;
     }
   }
 
@@ -345,6 +355,8 @@ body {
       line-height: 160%;
       max-width: 584px;
       padding: 0;
+      position: relative;
+      left: -25px;
     }
   }
 
