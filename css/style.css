@@ -485,7 +485,6 @@ body {
 @media (min-width: 768px) {
   .navigation__block2 {
     display: block;
-    position: relative;
   }
 }
 
@@ -810,7 +809,7 @@ body {
 
 @media (min-width: 768px) {
   .section-two__paragraph {
-    max-width: 469px;
+    max-width: 474px;
     font-size: 18px;
     line-height: 160%;
   }
@@ -856,7 +855,9 @@ body {
     font-size: 40px;
     line-height: 130%;
     margin-bottom: 50px;
-    padding-right: 60px;
+    position: relative;
+    left: -25.5px;
+    top: 1px;
   }
 }
 
@@ -908,6 +909,8 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    position: relative;
+    top: 1px;
   }
 }
 
@@ -958,6 +961,8 @@ body {
   .section-three__feature:nth-of-type(2) {
     margin-bottom: 50px;
     border-radius: 0;
+    position: relative;
+    left: 7px;
   }
 }
 
@@ -985,6 +990,8 @@ body {
 @media (min-width: 1200px) {
   .section-three__feature:nth-of-type(4) {
     border-radius: 0;
+    position: relative;
+    left: 7px;
   }
 }
 
@@ -993,6 +1000,8 @@ body {
   font-size: 16px;
   line-height: 100%;
   margin-bottom: 14px;
+  position: relative;
+  z-index: 2;
 }
 
 @media (min-width: 768px) {
@@ -1009,6 +1018,8 @@ body {
   line-height: 130%;
   margin-bottom: 14px;
   width: 80%;
+  position: relative;
+  z-index: 2;
 }
 
 @media (min-width: 768px) {
@@ -1016,6 +1027,7 @@ body {
     font-size: 16px;
     line-height: 160%;
     margin-bottom: 20px;
+    width: 220px;
   }
 }
 
@@ -1090,7 +1102,7 @@ body {
 @media (min-width: 768px) {
   .section-three__feature:nth-of-type(2) .section-three__feature-image {
     top: 40%;
-    left: -95px;
+    left: -100px;
     -webkit-transform: translate(0, -40%);
             transform: translate(0, -40%);
     width: 50%;
@@ -1115,6 +1127,41 @@ body {
             transform: translate(0, -43%);
     width: 50%;
   }
+}
+
+.section-three__ellipse {
+  position: absolute;
+  z-index: 0;
+}
+
+.section-three .ellipse-one {
+  top: -40px;
+  left: 190px;
+}
+
+.section-three .ellipse-two {
+  top: 30px;
+  left: 270px;
+}
+
+.section-three .ellipse-three {
+  top: 135px;
+  left: 180px;
+}
+
+.section-three .ellipse-four {
+  top: 21px;
+  left: 337px;
+}
+
+.section-three .ellipse-five {
+  top: -17px;
+  left: 2px;
+}
+
+.section-three .ellipse-six {
+  left: 340px;
+  top: 275px;
 }
 
 .section-four {
